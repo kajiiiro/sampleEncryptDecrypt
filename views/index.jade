@@ -1,0 +1,17 @@
+extends layout
+
+block addHeaders
+  link(rel='stylesheet', href='/stylesheets/index.css')
+
+block content
+  h1= title
+  div.item key[#{key.length}]: 
+    div.content= key
+  div.item keyHex[#{keyHex.length}]: 
+    div.content= keyHex
+  div.item encrypted[#{encrypted.length}]:
+    div.content= encrypted
+  div.item encryptedHex[#{encryptedHex.length}]:
+    div.content= encryptedHex
+  div.item decrypted[#{decrypted.length}]:
+    div.content= decrypted
